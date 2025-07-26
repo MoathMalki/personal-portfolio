@@ -1,0 +1,32 @@
+.contact {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__button {
+        @include button-style;
+        background-color: $secondary-color;
+        color: white;
+
+        &:hover {
+            background-color: darken($secondary-color, 10%);
+        }
+    }
+
+    @include respond-to($mobile-breakpoint) {
+        &__buttons {
+            flex-direction: column;
+        }
+    }
+}

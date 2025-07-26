@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moath Mouadi - Web Development Portfolio</title>
+    <link rel="stylesheet" href="../dist/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">Moath Mouadi</div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="#projects" class="header__link">Projects</a></li>
+                <li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
+                <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-banner">
+            <div class="intro-banner__content">
+                <h1 class="intro-banner__title">Frontend Developer</h1>
+                <p class="intro-banner__bio">
+                    I’m Moath Mouadi, a Frontend Developer with a strong foundation in Computer Information Systems and a passion for crafting seamless digital experiences. With hands-on training in modern web technologies, I specialize in building responsive, user-focused interfaces using HTML, CSS, JavaScript, and React.js. I enjoy transforming complex ideas into intuitive web applications and continuously strive to improve user interaction through clean code and thoughtful design.
+                </p>
+                <div class="intro-banner__socials">
+                    <a href="https://github.com/MoathMalki" class="intro-banner__social-link" aria-label="GitHub">
+                        <img src="https://img.icons8.com/ios-filled/24/000000/github.png" alt="GitHub Icon">
+                        GitHub
+                    </a>
+                    
+                </div>
+            </div>
+            <img src="img/imagemoath.jpeg" alt="Moath Mouadi " class="intro-banner__image">
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="projects__title">Latest Projects</h2>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <img src="img/djkstra.png" alt="Project 1" class="project-card__image">
+                    <h3 class="project-card__title"> Dijkstra's Algorithm </h3>
+                    <p class="project-card__description">This Java application visualizes Dijkstra's algorithm for finding the shortest path between capital cities on a world map.</p>
+                    <a href="https://github.com/MoathMalki/Dijkstra" class="button button--primary project-card__button">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="img/nerbay.png" alt="Project 2" class="project-card__image">
+                    <h3 class="project-card__title">Nearby Places</h3>
+                    <p class="project-card__description"> Project Description
+
+                        This React web application helps users search for nearby places (cafés, restaurants, resorts, etc.) by using a combination of two APIs: Foursquare Places API: Used to retrieve detailed information about places (name, category, address, etc.) https://docs.foursquare.com/developer/reference/place-search  
+                        OpenCage Geocoding API: Used to convert user-entered location names into geographic coordinates (latitude & longitude) that are then passed to Foursquare. https://opencagedata.com/api</p>
+                    <a href="https://github.com/MoathMalki/WebServices-main" class="button button--primary project-card__button">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="img/project3.png" alt="Project 3" class="project-card__image">
+                    <h3 class="project-card__title">Fitlife Gym</h3>
+                    <p class="project-card__description">FitLife Gym is a modern fitness center offering top-notch equipment, group classes, and personal training to help members reach their health goals.
+
+                    </p>
+                    <a href="https://fitlife.ps/" class="button button--primary project-card__button">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="skills__title">Skills</h2>
+            <div class="skills__grid">
+                <div class="skill-card">React</div>
+                <div class="skill-card">Next.js</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">HTML/CSS</div>
+                <div class="skill-card">Tailwind CSS</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">Node.js</div>
+                <div class="skill-card">SpringBoot</div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="contact__title">Get in Touch</h2>
+            <div class="contact__buttons">
+                <a href="mailto:moathmouadi4@gmail.com" class="button button--secondary contact__button">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/email.png" alt="Email Icon">
+                    Email Me
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© Moath Mouadi 2025</p>
+    </footer>
+</body>
+</html>

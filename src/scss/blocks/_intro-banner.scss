@@ -1,0 +1,60 @@
+.intro-banner {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background-color;
+
+    &__content {
+        max-width: 50%;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    &__bio {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: $text-color;
+        font-weight: bold;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    &__image {
+        width: 400px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    @include respond-to($mobile-breakpoint) {
+        flex-direction: column;
+        text-align: center;
+
+        &__content {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &__image {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+}

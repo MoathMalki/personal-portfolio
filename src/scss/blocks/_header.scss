@@ -1,0 +1,48 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+    &__logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $text-color;
+        font-weight: bold;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    @include respond-to($mobile-breakpoint) {
+        flex-direction: column;
+        padding: 15px;
+
+        &__list {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}

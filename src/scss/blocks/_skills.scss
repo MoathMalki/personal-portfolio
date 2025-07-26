@@ -1,0 +1,30 @@
+.skills {
+    padding: 50px;
+    background-color: $light-background;
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    @include respond-to($mobile-breakpoint) {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+.skill-card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
